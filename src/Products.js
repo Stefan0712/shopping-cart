@@ -9,7 +9,6 @@ function Products(){
     const [total, setTotal] = useState(0)
     const [cart, setCart] = useState([])
     const [products, setProducts] = useState([])
-    const [productIndex, setProductIndex] = useState(0)
     const [itm, setItm] = useState([
         {
             name: 'Black Tea',
@@ -48,14 +47,13 @@ function Products(){
     }
    
     const addToCart=(item)=>{
-        setProductIndex(productIndex+1)
-        setCart(cart=>[...cart, <CartProduct cartIndex={productIndex} key={cart.length+'key'} onClick={()=>{deleteItem(productIndex)}} product={item}/>]);
+        setCart(cart=>[...cart, <CartProduct key={cart.length+'key'} onClick={()=>{deleteItem(cart.length)}} product={item}/>]);
         setTotal(total=>Math.round(((total+item.price) + Number.EPSILON) * 100) / 100)
 
     }
     
     const deleteItem=(index)=>{
-        console.log(index)
+        setCart([cart.splice(index,1)])
     }
     return(
         <div className='main-products-container'>
