@@ -1,0 +1,32 @@
+.cart-container{
+ }
+.cart-title{
+    margin-top: 20px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3x 3x 3x 3x lightgray;
+    font-size: 30px;
+}
+.cart-products{
+    padding: 30px 15px;
+    height: 550px;
+    overflow: scroll;
+}
+.cart-inputs{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-inputs button{
+    height:50px;
+    width: 100%;
+    border: none;
+    background-color: #00FFAB;
+    font-size: 20px;
+    color: rgb(94, 91, 91);
+    border-radius: 10px;
+}

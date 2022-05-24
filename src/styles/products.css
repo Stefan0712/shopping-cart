@@ -1,0 +1,18 @@
+body{
+    width: 100vw;
+}
+.main-products-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.products-container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 50px;
+}
+.shoppingCart-container{
+    height: 700px;
+    background-color: rgba(134, 133, 133, 0.062);
+    border-radius: 25px;
+}

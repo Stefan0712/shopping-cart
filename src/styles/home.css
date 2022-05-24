@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    align-items: center;
+}
+.homeImg{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}
+.content{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(92, 84, 84, 0.2);
+   
+
+}
+.descr, .about, .reviews{
+    text-align: center;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.images{
+
+}
+
+
+

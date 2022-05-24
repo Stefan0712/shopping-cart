@@ -1,0 +1,44 @@
+body{
+    margin:0px;
+    overflow-x: hidden;
+}
+nav{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+footer{
+    height: 20vh;
+    position: absolute;
+    bottom: 0px;
+}
+
+nav a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    height: 50%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
+}
+nav a:hover{
+    background-color: rgba(92, 84, 84, 0.2);
+}
+.title{
+    margin-right: auto;
+    margin-left: 10px;
+    align-items: center;
+    justify-items: center;
+}
+.logo{
+    filter: invert(100%);
+}
