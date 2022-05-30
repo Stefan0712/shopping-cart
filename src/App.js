@@ -8,7 +8,7 @@ function App() {
         <div className="title">
           <div className="logo"><img src='./images/logo.png' alt='logo'></img></div>
         </div>
-        <Link to='Home'>Home</Link>
+        <Link to='/Home'>Home</Link>
         <Link to='/Products'>Products</Link>
         <Link to='/Contact'>Contact</Link>
       </nav>
