@@ -3,8 +3,9 @@ import './cartItem.css'
 
 function CartProduct(props){
     return(
-        <div className='cart-product-container' key={props.product.title}>
+        <div className='cart-product-container' key={props.product.title+'a'}>
             <div className='cart-product-title'>
+                {props.product.count}
                 {props.product.title}
             </div>
             <div className='cart-product-image'>
@@ -14,7 +15,10 @@ function CartProduct(props){
                 {props.product.price}
             </div>
             <div className='cart-product-inputs'>
-                <button onClick={()=>{props.onClick(props.index)}}>X</button>
+                <button onClick={()=>{
+                    props.product.count=props.product.count+1;
+                props.onClick(props.product)
+                }}>X</button>
             </div>
 
         </div>
