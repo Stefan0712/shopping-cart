@@ -13,7 +13,7 @@ const RouteSwitch = () => {
             <Route path='/Home' element={<Home />} />
             <Route path="/Products" element={<Products />} />
             <Route path='/ShoppingCart' element={<ShoppingCart />} />
-            <Route path='*' element={<main style={{padding: "1rem"}}><p>There is nothing there!</p></main>} />
+            <Route path='*' element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
