@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import Product from './components/Product';
 import ShoppingCart from './ShoppingCart'
 import './styles/products.css';
+import backTeaImg from './images/black-tea.jpg'
+import lemonTeaImg from './images/lemon-tea.jpg'
+import greenTeaImg from './images/green-tea.jpg'
+import strawberryTeaImg from './images/strawberry-tea.jpg'
 
 
 function Products(){
@@ -13,14 +17,14 @@ function Products(){
             name: 'Black Tea',
             price: 1.99,
             description: "Best coffee alternative",
-            image: '/images/black-tea.jpg',
+            image: blackTeaImg,
             count: 0
     },
     {
             name: 'Green Tea',
             price: 2.99,
             description: "Great for a morning full of energy",
-            image: '/images/green-tea.jpg',
+            image: greenTeaImg,
             count: 0
 
 
@@ -29,7 +33,7 @@ function Products(){
             name: 'Lemon Tea',
             price: 3.99,
             description: "You can't go wrong with this. Everyone loves this flavour",
-            image: '/images/lemon-tea.jpg',
+            image: lemonTeaImg,
             count: 0
 
 
@@ -38,7 +42,7 @@ function Products(){
             name: 'Strawberry Tea',
             price: 2.49,
             description: "9/10 kids recommend this",
-            image: './images/strawberry-tea.jpg',
+            image: strawberryTeaImg,
             count: 0
 
 
